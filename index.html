@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kurma Karthik — UI Developer</title>
+  <meta name="description" content="UI Developer crafting seamless digital experiences with modern UI/UX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon/icons8-man-100.png" type="image/png">
+  <!-- NEW: skills belt styles (keep separate from your main CSS) -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand">Kurma Karthik</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul id="menu" class="menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link active">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <p class="eyebrow">HELLO I'M</p>
+    <h1 class="hero-title">
+      <span>KURMA</span> <span class="accent">KARTHIK</span>
+    </h1>
+    <p class="typing">
+      <span id="type-target" aria-live="polite"></span><span class="caret" aria-hidden="true">|</span>
+    </p>
+    <p class="tagline">
+      Results-driven UI Developer with expertise in Html5, React.js, JavaScript, CSS3, Tailwind css, Bootstrap, and SQL. Passionate about designing scalable micro frontend architectures, optimizing UI performance, and enhancing user experience. Strong problem-solving skills with a focus on efficiency, responsiveness, and maintainability. 
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Hire Me</a>
+      <a class="btn ghost" href="#projects">View Projects</a>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <header class="section-head">
+        <h2>About <span class="accent-ink">Who I Am</span></h2>
+        <p class="section-sub">
+          A results-driven UI Developer focused on scalable micro-frontends, performance, and crisp user experiences.
+        </p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I specialize in React, JavaScript, and modern CSS—building responsive, accessible, and maintainable
+            interfaces. I love turning complex problems into simple, beautiful products and optimizing
+            performance so apps feel instant.
+          </p>
+
+          <p class="about-highlight">
+            At Acta Scientific I delivered micro-frontend architectures that
+            <strong>improved UI responsiveness by 40%</strong> and
+            <strong>reduced statement generation time by 20%</strong>.
+          </p>
+
+          <div class="about-badges">
+            <span class="pill">Micro-frontends</span>
+            <span class="pill">Web Performance</span>
+            <span class="pill">Accessibility (a11y)</span>
+            <span class="pill">Design Systems</span>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <article class="panel reveal">
+            <h3>Frontend Development</h3>
+            
+            <p>Responsive, scalable, high-performance web apps with modern tooling.</p>
+            <div class="tags">
+              <span>React</span><span>TypeScript</span><span>CSS / SASS</span><span>Webpack</span>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="animation-delay:.06s">
+            <h3>UI/UX Design</h3>
+            <p>Human-centered interfaces with attention to clarity, motion, and accessibility.</p>
+            <div class="tags">
+              <span>Prototyping</span><span>Design Tokens</span><span>Animations</span><span>A11y</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- marquee skills pills -->
+    <div class="skills-scroller">
+      <div class="rail">
+        <span class="chip">React</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span>
+        <span class="chip">Tailwind CSS</span><span class="chip">Redux</span><span class="chip">Jest</span>
+        <span class="chip">Cypress</span><span class="chip">Node.js</span><span class="chip">Webpack</span><span class="chip">SQL</span>
+        <!-- duplicate for loop -->
+        <span class="chip">React</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span>
+        <span class="chip">Tailwind CSS</span><span class="chip">Redux</span><span class="chip">Jest</span>
+        <span class="chip">Cypress</span><span class="chip">Node.js</span><span class="chip">Webpack</span><span class="chip">SQL</span>
+      </div>
+    </div>
+
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/kurma-karthik/" aria-label="LinkedIn">…</a></li>
+      <li><a href="https://github.com/karthik736/" aria-label="GitHub">…</a></li>
+      <li><a href="mailto:karthiksona81@gmail.com" aria-label="Email">…</a></li>
+    </ul>
+    <a href="#skills" class="chevron" aria-label="Scroll down">⌄</a>
+  </section>
+
+  <!-- Skills (from resume) -->
+  <section id="skills" class="section container">
+    <header class="section-head">
+      <h2>My <span class="accent-ink">Skills</span></h2>
+      <p class="section-sub">Technologies & tools I use to craft seamless UIs.</p>
+    </header>
+
+    <div class="grid-4 reveal">
+      <article class="panel">
+        <h3>Frontend Development</h3>
+        <p>Modern, responsive interfaces.</p>
+        <div class="tags">
+          <span>JavaScript (ES6+)</span><span>React.js</span><span>HTML5</span>
+          <span>CSS3</span><span>Bootstrap 5</span><span>Tailwind CSS</span>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>State Management</h3>
+        <p>Predictable app state.</p>
+        <div class="tags">
+          <span>Redux</span><span>Context API</span><span>React Query</span><span>Zustand</span>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Performance & Testing</h3>
+        <p>Fast, reliable, and testable UIs.</p>
+        <div class="tags">
+          <span>Lazy Loading</span><span>Jest</span><span>Cypress</span><span>Chrome DevTools</span><span>Webpack</span>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Tools & Workflow</h3>
+        <p>Efficient delivery & collaboration.</p>
+        <div class="tags">
+          <span>Git</span><span>GitHub</span><span>CI/CD Pipelines</span>
+          <span>VS Code</span><span>Postman</span><span>SQL</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- BOTTOM-CENTERED BELT -->
+    <div class="belt skills-belt" aria-label="Skill list">
+      <span style="--i:0">JavaScript</span>
+      <span style="--i:1">React.js</span>
+      <span style="--i:2">Redux</span>
+      <span style="--i:3">Jest</span>
+      <span style="--i:4">Cypress</span>
+      <span style="--i:5">HTML5</span>
+      <span style="--i:6">CSS3</span>
+      <span style="--i:7">Bootstrap</span>
+      <span style="--i:8">Tailwind CSS</span>
+      <span style="--i:9">SQL</span>
+      <span style="--i:10">Git</span>
+      <span style="--i:11">GitHub</span>
+      <span style="--i:12">CI/CD</span>
+      <span style="--i:13">Postman</span>
+      <span style="--i:14">VS Code</span>
+    </div>
+  </section>
+
+
+  <!-- Experience (from resume) -->
+  <section id="experience" class="section container">
+    <header class="section-head">
+      <h2>Professional <span class="accent-ink">Experience</span></h2>
+      <p class="section-sub">Building, optimizing, and shipping impactful UI. <!-- resume source --></p>
+    </header>
+
+    <div class="timeline">
+      <article class="xp-card reveal">
+        <div class="dot"></div>
+        <div class="xp-head">
+          <h3>UI Developer</h3>
+          <span class="company">Acta Scientific</span>
+          <span class="label">Full-time</span>
+        </div>
+        <p class="meta"><span>September 2023 – June 2024</span> • <span>Remote</span></p>
+        <p class="xp-desc">UI development focusing on scalable micro frontends and performance optimization.</p>
+        <ul class="bullets">
+          <li>Developed scalable micro frontend architecture for e-Statements using React.js & Webpack; improved UI responsiveness by <strong>40%</strong>. :contentReference[oaicite:1]{index=1}</li>
+          <li>Designed a custom date range selection feature improving data retrieval efficiency; reduced statement generation time by <strong>20%</strong>. :contentReference[oaicite:2]{index=2}</li>
+          <li>Optimized UI components for a seamless experience, boosting user engagement by <strong>15%</strong>. :contentReference[oaicite:3]{index=3}</li>
+          <li>Integrated RESTful APIs, improving data loading performance by <strong>30%</strong>. :contentReference[oaicite:4]{index=4}</li>
+          <li>Implemented robust error handling with backend collaboration, reducing UI bugs by <strong>25%</strong>. :contentReference[oaicite:5]{index=5}</li>
+        </ul>
+      </article>
+
+      <article class="xp-card reveal" style="animation-delay:.06s">
+        <div class="dot"></div>
+        <div class="xp-head">
+          <h3>Software Engineering Intern</h3>
+          <span class="company">Accenture — Hyderabad, Telangana</span>
+          <span class="label">Internship</span>
+        </div>
+        <p class="meta"><span>January 2022 – April 2022</span></p>
+        <ul class="bullets">
+          <li>Explored AI’s impact on human-machine collaboration; assisted project management and learned industry best practices. :contentReference[oaicite:6]{index=6}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects (includes resume project) -->
+  <section id="projects" class="section container">
+    <header class="section-head">
+      <h2>Featured <span class="accent-ink">Projects</span></h2>
+      <p class="section-sub">A selection of engineering + UI work.</p>
+    </header>
+
+    <div class="grid-2 auto-fit">
+      <!-- Existing UI project 1 -->
+      <article class="card reveal">
+        <div class="media">
+          <span class="badge">Featured</span>
+          <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1500&auto=format&fit=crop" alt="Analytics dashboard" />
+          <span class="shine" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <span class="pill">Full-Stack</span>
+          <h3>E-Statements Micro Frontend</h3>
+          <p>Micro-frontend architecture for financial e-statements built with React & Webpack.</p>
+          <div class="tags tight">
+            <span>React</span><span>Webpack</span><span>JavaScript</span><span>CSS3</span><span>REST</span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Live demo">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/><path d="M5 5h6V3H3v8h2V5z"/><path d="M5 19h14V9h2v12H3V9h2v10z"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Repository">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a5.5 5.5 0 00-1.74 10.72c.28.05.38-.12.38-.27v-1c-1.55.34-1.88-.66-1.88-.66-.25-.65-.62-.82-.62-.82-.51-.35.04-.34.04-.34.56.04.86.58.86.58.5.86 1.31.61 1.63.47.05-.37.2-.62.36-.76-1.24-.14-2.54-.62-2.54-2.75 0-.61.22-1.11.58-1.5-.06-.14-.25-.73.05-1.52 0 0 .47-.15 1.54.58.44-.12.91-.18 1.38-.18.47 0 .94.06 1.38.18 1.07-.73 1.54-.58 1.54-.58.3.79.11 1.38.05 1.52.36.39.58.89.58 1.5 0 2.13-1.3 2.61-2.55 2.75.21.18.4.54.4 1.1v1.63c0 .15.1 .33.38 .27A5.5 5.5 0 0012 .5z"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- Existing UI project 2 -->
+      <article class="card reveal" style="animation-delay:.08s">
+        <div class="media">
+          <span class="badge">Featured</span>
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1500&auto=format&fit=crop" alt="Kanban sticky notes" />
+          <span class="shine" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <span class="pill">Frontend</span>
+          <h3>Custom Date Range Component</h3>
+          <p>Advanced date range picker with efficient retrieval and polished UX.</p>
+          <div class="tags tight">
+            <span>React</span><span>JavaScript</span><span>CSS3</span><span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Live demo">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/><path d="M5 5h6V3H3v8h2V5z"/><path d="M5 19h14V9h2v12H3V9h2v10z"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Repository">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a5.5 5.5 0 00-1.74 10.72c.28.05.38-.12.38-.27v-1c-1.55.34-1.88-.66-1.88-.66-.25-.65-.62-.82-.62-.82-.51-.35.04-.34.04-.34.56.04.86.58.86.58.5.86 1.31.61 1.63.47.05-.37.2-.62.36-.76-1.24-.14-2.54-.62-2.54-2.75 0-.61.22-1.11.58-1.5-.06-.14-.25-.73.05-1.52 0 0 .47-.15 1.54.58.44-.12.91-.18 1.38-.18.47 0 .94.06 1.38 .18 1.07-.73 1.54-.58 1.54-.58.3.79.11 1.38.05 1.52.36.39.58.89.58 1.5 0 2.13-1.3 2.61-2.55 2.75.21.18.4.54.4 1.1v1.63c0 .15.1 .33.38 .27A5.5 5.5 0 0012 .5z"/></svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- Resume project -->
+      <article class="card reveal" style="animation-delay:.12s">
+        <div class="media">
+          <span class="badge">Academic</span>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1500&auto=format&fit=crop" alt="Structural analysis concept" />
+          <span class="shine" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <span class="pill">Engineering</span>
+          <h3>Structural Analysis of Tall Buildings (STAAD Pro v8i)</h3>
+          <p>Wind-load analysis for a G+15 building; optimized design and validated structural integrity. :contentReference[oaicite:7]{index=7}</p>
+          <div class="tags tight">
+            <span>Wind Load</span><span>Shear / Bending</span><span>STAAD Pro v8i</span><span>Optimization</span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Notes">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h12v2H3v-2z"/></svg>
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education (unchanged text from earlier) -->
+  <section id="education" class="section container">
+    <header class="section-head">
+      <h2>Education <span class="accent-ink">Journey</span></h2>
+      <p class="section-sub">Academic background & continuous learning.</p>
+    </header>
+
+    <article class="edu-card reveal">
+      <div class="dot"></div>
+      <div class="edu-head">
+        <h3>Bachelor of Technology</h3>
+        <span class="label">Bachelor’s Degree</span>
+      </div>
+      <p class="school">Malla Reddy Institute of Technology</p>
+      <p class="meta"><span>July 2018 – July 2022</span> • <span>Hyderabad, Telangana</span></p>
+      <div class="cgpa">CGPA: <strong>6.55</strong></div>
+      <ul class="bullets">
+        <li>Strong foundation in technical analysis and problem-solving.</li>
+        <li>Project management and teamwork skills.</li>
+        <li>Analytical and mathematical thinking development.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <header class="section-head">
+      <h2>Get In <span class="accent-ink">Touch</span></h2>
+      <p class="section-sub">Have a project in mind? Let’s talk.</p>
+    </header>
+
+    <div class="contact-grid reveal">
+      <aside class="contact-info">
+        <div class="info-card">
+          <div class="ic">📍</div>
+          <div><h4>Location</h4><p>Hyderabad, India</p></div>
+        </div>
+        <div class="info-card">
+          <div class="ic">✉️</div>
+          <div><h4>Email</h4><p>karthiksona81@gmail.com</p></div>
+        </div>
+        <div class="info-card">
+          <div class="ic">📞</div>
+          <div><h4>Phone</h4><p>+91 6302344728</p></div>
+        </div>
+      </aside>
+
+      <form class="form" id="contact-form" novalidate>
+        <label> Your Name * <input type="text" name="name" required placeholder="Enter your name" /></label>
+        <label> Email Address * <input type="email" name="email" required placeholder="Enter your email" /></label>
+        <label class="full"> Subject * <input type="text" name="subject" required placeholder="What's this about?" /></label>
+        <label class="full"> Message * <textarea name="message" required rows="6" placeholder="Tell me about your project or just say hello..."></textarea></label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section> 
+  <footer>
+     <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <!-- Brand -->
+      <a class="brand" href="#" aria-label="Karthik Home">
+        <!-- Simple inline logo (SVG) -->
+        <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="30" />
+          <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle">K</text>
+        </svg>
+        <span class="brand-text">
+          <strong>Karthik</strong>
+          <span class="subtitle">UI Developer</span>
+        </span>
+      </a>
+
+      <!-- Contact -->
+      <ul class="contact">
+        <li>
+          <a href="mailto:hello@karthik.dev" aria-label="Email Karthik">karthiksona81@gmail.com</a>
+        </li>
+        <li>
+          <a href="tel:+911234567890" aria-label="Call Karthik">+91 6302344728</a>
+        </li>
+      </ul>
+
+      <!-- Social -->
+      <nav class="social" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/kurma-karthik/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.07V23h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.49-2.2 3.02V23h-4V8.5z"/>
+          </svg>
+          <span></span>
+        </a>
+        <a href="https://github.com/karthik736"
+           target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <!-- GitHub icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.8-.25.8-.56v-2c-3.2.7-3.88-1.38-3.88-1.38-.53-1.35-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.22-1.28-5.22-5.7 0-1.26.45-2.3 1.2-3.12-.12-.3-.52-1.5.12-3.1 0 0 .98-.31 3.2 1.19a11.1 11.1 0 0 1 5.82 0c2.2-1.5 3.19-1.19 3.19-1.19.65 1.6.25 2.8.12 3.1.75.82 1.2 1.86 1.2 3.12 0 4.43-2.68 5.4-5.24 5.69.42.37.8 1.1.8 2.23v3.3c0 .31.22.66.81.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+          </svg>
+          <span></span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p id="copyright" class="copy"></p>
+    </div>
+  </footer>
+  </footer>
+
+ 
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
